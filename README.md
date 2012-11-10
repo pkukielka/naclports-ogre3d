@@ -1,7 +1,7 @@
 ## About naclports-ogre3d
 
 Naclports-ogre3d is an effort to make Ogre3d part of naclports.
-It compile it you should set those environment flagS:
+It compile it you should set those environment flags:
 ```
 export NACL_GLIBC=1
 export NACL_SDK_ROOT=/path_to_your_nacl_sdk/pepper_2x
@@ -9,7 +9,7 @@ export NACL_SDK_ROOT=/path_to_your_nacl_sdk/pepper_2x
 I was testing it with pepper_23. 
 This port have few limitations like no cg plugin, disabled samples
 or GLES2 rendering system instead of GL (look at cmake flags for details)
-it should be good enough to get you started with Ogre and NaCL.
+but it should be good enough to get you started with Ogre and NaCL.
 
 ## External Native Client SDK Packages
 
