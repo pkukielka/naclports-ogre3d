@@ -1,4 +1,17 @@
-External Native Client SDK Packages
+## About naclports-ogre3d
+
+Naclports-ogre3d is an effort to make Ogre3d part of naclports.
+It compile it you should set those environment flagS:
+
+export NACL_GLIBC=1
+export NACL_SDK_ROOT=/path_to_your_nacl_sdk/pepper_2x
+
+I was testing it with pepper_23. 
+This port have few limitations like no cg plugin, disabled samples
+or GLES2 rendering system instead of GL (look at cmake flags for details)
+it should be good enough to get you started with Ogre and NaCL.
+
+## External Native Client SDK Packages
 
 The libraries directory contains bash scripts and patch files to build
 common libraries for Native Client. The bash scripts will download, patch
