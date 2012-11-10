@@ -107,7 +107,8 @@ LIBRARIES = \
      libraries/libmikmod-3.1.11 \
      libraries/jsoncpp-0.5.0 \
      libraries/openal-soft-1.13 \
-     libraries/gtest-1.5.0
+     libraries/gtest-1.5.0 \
+     libraries/ogre_src_v1-8-1
 
 EXAMPLES = \
      examples/games/scummvm-1.2.1 \
@@ -209,7 +210,9 @@ $(SENT)/libraries/nacl-mounts: libraries/gtest-1.5.0
 ifneq ($(NACL_GLIBC), 1)
   $(SENT)/libraries/openssl-1.0.0e: libraries/glibc-compat
 endif
-
+$(SENT)/libraries/libraries/ogre_src_v1-8-1: \ 
+	libraries/zlib-1.2.3 libraries/FreeImage-3.14.1 libraries/freetype-2.1.10
+	
 # shortcuts libraries (alphabetical)
 agg: libraries/agg-2.5 ;
 boost: libraries/boost_1_47_0 ;
@@ -262,6 +265,7 @@ vorbis: libraries/libvorbis-1.2.3 ;
 x264: libraries/x264-snapshot-20091023-2245 ;
 zlib: libraries/zlib-1.2.3 ;
 ncurses: libraries/ncurses-5.9 ;
+ogre: libraries/ogre_src_v1-8-1 ;
 
 # shortcuts examples (alphabetical)
 bochs: examples/systems/bochs-2.4.6 ;
