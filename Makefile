@@ -210,9 +210,9 @@ $(SENT)/libraries/nacl-mounts: libraries/gtest-1.5.0
 ifneq ($(NACL_GLIBC), 1)
   $(SENT)/libraries/openssl-1.0.0e: libraries/glibc-compat
 endif
-$(SENT)/libraries/libraries/ogre_src_v1-8-1: \ 
-	libraries/zlib-1.2.3 libraries/FreeImage-3.14.1 libraries/freetype-2.1.10
-	
+$(SENT)/libraries/ogre_src_v1-8-1: libraries/zlib-1.2.3 \
+    libraries/FreeImage-3.14.1 libraries/freetype-2.1.10
+
 # shortcuts libraries (alphabetical)
 agg: libraries/agg-2.5 ;
 boost: libraries/boost_1_47_0 ;

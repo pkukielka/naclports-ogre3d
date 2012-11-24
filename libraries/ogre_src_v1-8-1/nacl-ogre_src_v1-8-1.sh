@@ -8,7 +8,7 @@
 #
 # usage:  nacl-ogre-1.8.1.sh
 #
-# this script downloads, patches, and builds OpenAL for Native Client
+# this script downloads, patches, and builds Ogre3D for Native Client
 #
 
 readonly URL=http://bitly.com/SEGjdI
@@ -40,7 +40,9 @@ CustomConfigureStep() {
            -DOGRE_CONFIG_THREADS=0 \
            -DOGRE_CONFIG_ENABLE_ZIP=false \
            -DOGRE_BUILD_PLUGIN_CG=false \
-           -DOGRE_BUILD_SAMPLES=false
+           -DOGRE_BUILD_SAMPLES=false \
+           -DEGL_INCLUDE_DIR=${NACL_SDK_ROOT}/include \
+           -DOPENGLES2_INCLUDE_DIR=${NACL_SDK_ROOT}/include
 }
 
 CustomPackageInstall() {
